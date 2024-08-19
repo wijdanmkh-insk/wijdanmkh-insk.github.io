@@ -83,6 +83,11 @@ html {
     text-decoration: none;
 }
 
+.nav ul.show {
+    display: flex; 
+    flex-direction: column;
+}
+
 .logo a {
     color: var(--a5);
     margin: 0;
@@ -468,9 +473,31 @@ footer p {
     right: 0;
 }
 
-@media (max-width: var(--max-display)) {
+@media (min-width:768px){
+    .nav-toggle{
+        display:none;
+    }
+
+    .nav ul {
+        display: flex; 
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle{
+        display:block;
+    }
     .nav {
         padding: 0 5%;
+    }
+
+    .nav ul{
+        display:none;
+    }
+
+    .nav ul.show {
+        display: flex;
     }
 
     .hero-content h3 {

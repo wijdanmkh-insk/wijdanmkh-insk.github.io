@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Toggle Navbar Menu
-    const navToggle = document.getElementById('nav-toggle');
-    const navbar = document.querySelector('.nav ul');
+    function toggle() {
+        const navToggle = document.getElementById('nav-toggle');
+        const navbar = document.querySelector('.nav ul');
 
-    navToggle.addEventListener('click', () => {
-    navbar.classList.toggle('show');
-    });
+        navToggle.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+    }
+    window.onload = toggle;
 
     //Change Image
     function frown() {
@@ -34,5 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             quarterCircle.style.backgroundColor = rootStyles.getPropertyValue('grey');
         });
     }
+
+    toggle();
     frown();
 });
