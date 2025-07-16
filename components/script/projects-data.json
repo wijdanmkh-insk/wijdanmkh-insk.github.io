@@ -1,0 +1,27 @@
+[
+  {
+    "image": "./components/img/carousel/pixilart-drawing(15).png",
+    "title": "Petualangan Pixel",
+    "detail": "Karakter pixel berpetualang di dunia fantasi dengan latar siang cerah dan awan pixel."
+  },
+  {
+    "image": "./components/img/carousel/pixilart-drawing(16).png",
+    "title": "Hutan Retro",
+    "detail": "Visualisasi hutan bergaya retro pixel dengan warna hijau tua dan kabut tipis di pagi hari."
+  },
+  {
+    "image": "./components/img/carousel/pixilart-drawing(17).png",
+    "title": "Kota Pixel",
+    "detail": "Gedung-gedung kota malam hari dengan lampu neon bergaya pixel art yang bersinar terang."
+  },
+  {
+    "image": "./components/img/carousel/pixilart-drawing(18).png",
+    "title": "Samurai Pixel",
+    "detail": "Seorang samurai pixel berdiri dengan latar belakang matahari terbenam merah jingga di Jepang kuno."
+  },
+  {
+    "image": "./components/img/carousel/pixilart-drawing(19).png",
+    "title": "Pixel di Angkasa",
+    "detail": "Roket pixel meluncur ke luar angkasa, dengan bintang-bintang dan planet bergaya 8-bit."
+  }
+]

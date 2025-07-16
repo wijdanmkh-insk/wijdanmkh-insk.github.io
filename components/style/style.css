@@ -1,0 +1,327 @@
+:root{
+    --button-size: 100px;
+    --icon-size : 60px;
+}
+
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+    background-color:#212338;
+}
+
+.pixelify-sans-normal {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans-title {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.page-layout{
+    display:flex;
+    grid-template-columns : 200px 1fr;
+    height:100vh;
+    width:100%;
+    flex-direction: row;
+    padding : 0 2em 2em;
+}
+
+.sidebar{
+    padding:1em;
+}
+
+.content{
+    padding:1em 2em 1em 4em;
+    margin:1em 4em 1em 4em;
+}
+
+.name{
+    font-size: 80px;
+    text-align:left;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.pixel-icon{
+    width:var(--icon-size);
+    image-rendering:pixelated;
+    image-rendering:crisp-edges;
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.pixel-rotate{
+    transform : rotate(-45deg);
+    image-rendering: pixelated;
+}
+
+.pixel-button{
+    display : inline-block;
+    background-image: url(../img/buttons/button-normal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering:pixelated;
+    width:var(--button-size);
+    height:var(--button-size);
+    position: relative;
+    transition : background-iamge 0.3s ease;
+}
+
+.pixel-button:hover{
+    width : var(--button-size);
+    height : var(--button-size);
+    background-image: url(../img/buttons/button-pressed.png);
+    background-size : cover;
+    image-rendering : pixelated; 
+}
+
+.pixel-button .disabled:hover{
+    background-image: url(../img/buttons/button-normal.png);
+    background-size : cover;
+    cursor:not-allowed;
+}
+
+.pixel-button .disabled img{
+    filter:grayscale(100%);
+    opacity:0.4;
+    pointer-events: none;
+}
+
+.pixel-button:hover .pixel-icon{
+    width:var(--icon-size);
+    image-rendering:pixelated;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.pixel-button .project-button:hover{
+    width:var(--icon-size);
+    image-rendering:pixelated;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.project-button{
+    width:var(--icon-size);
+    height:var(--icon-size);
+    image-rendering:pixelated;
+    image-rendering:crisp-edges;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) rotate(45deg);
+}
+
+.skip-button{
+    width : 200px;
+    bottom : 2em;
+    right : 2em;
+    position : fixed;
+    transform : translateY(100%);
+    pointer-events: none;
+    opacity : 0;
+    transition : transform 0.6s ease 0.2s
+}
+
+.skip-button.visible{
+    transform : translateY(0%);
+    opacity : 1; 
+    pointer-events: auto;
+}
+
+.skip-button.hidden{
+    opacity : 0;
+    transform : translateY(100%);
+    pointer-events : none;
+}
+
+.skip-img{
+    width : 200px;
+    image-rendering: pixelated;
+    transition : opacity 0.2s ease;
+}
+
+.sidebar-links{
+    list-style : none;
+    padding : 0;
+    margin : 0;
+    display : flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    gap:2em;
+}
+
+.sidebar-links li{
+    width: fit-content;
+    justify-content: center;
+}
+
+.sidebar{
+    padding : 1em 2em 2em;
+    flex-direction: column;
+    display:flex;
+    align-items: flex-start;
+    position : fixed;
+    justify-content: center;
+}
+
+.hidden{
+    display : none;
+}
+
+.disabled{
+    filter: grayscale(100%);
+    opacity : 0.4;
+    pointer-events:none;
+    transition : filter 5s ease;
+}
+
+.active{
+    filter:grayscale(0%);
+}
+
+.sidewalk-container{
+    position : relative;
+    width : 100%;
+    z-index: 1000;
+}
+
+.sidewalk-container img{
+    position : absolute;
+    width : 300px;
+    image-rendering: pixelated;
+    bottom : 1em;
+    left : 1em;
+}
+
+#bio{
+    padding-right: 3em;
+    display:flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.text{
+    justify-content: center;
+    padding:1em;
+    text-align: justify;
+    width:auto;
+}
+
+.my-photo{
+    margin:0;
+    
+}
+
+.title{
+    font-size: 3em;
+    color: white;
+}
+
+.detail{
+    font-size: 1.5em;
+    color:white;
+}
+
+.photo-container{
+    width:600px;
+    height:600px;
+    overflow:hidden;
+    position:relative;
+    padding : 3em;
+}
+
+.photo-container img{
+    width:auto;
+    height: 600px;
+    position:absolute;
+}
+
+.project-container{
+    width:100%;
+    height:100%;
+}
+
+.main{
+    padding : 2em 2em 2em 2em;
+}
+
+/*Carousel Only*/
+
+.full-carousel {
+    position: relative;
+    width: 300px;
+    height: auto; /* atau height tetap, tergantung desain */
+}
+
+.bg-carousel {
+    position: relative;
+    width: 300px;
+    height: auto;
+}
+
+.bg-carousel img {
+    width: 100%;
+    display: block;
+    image-rendering: pixelated; /* Atau crisp-edges sesuai keperluan */
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 0; /* kasih padding biar gak nempel pinggir */
+    box-sizing: border-box;
+    z-index: 1; /* pastikan ini di atas background */
+    position:absolute;
+}
+
+.carousel-photo {
+    position:relative;
+    d
+}
+
+.carousel-photo img {
+    width: 100%;
+}
+
+.carousel-text {
+    margin-left: 20px;
+    max-width: 250px;
+    text-align:justify;
+    position:absolute;
+}
+
+.carousel-title {
+    font-weight: bold;
+}
+
+.learn-more{
+    bottom : 0;
+    right : 1;
+}

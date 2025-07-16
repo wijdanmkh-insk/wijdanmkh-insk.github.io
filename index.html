@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Dan's Shipwreck</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./components/style/style.css">
+    <link rel="stylesheet" href="./components/style/keyframes.css">
+
+    <script src="./components/script/script.js"></script>
+    <script type="module" src="./components/script/carousel-component.js"></script>
+
+    <!--Fonts Configurations-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="page-layout">
+    <div class="sidebar">
+        <div class="name pixelify-sans-title">
+            DAN
+        </div>
+
+        <ul class="sidebar-links disabled">
+            <li>
+                <a href="#bio">
+                    <div class="pixel-button">
+                        <img class="pixel-icon" src="./components/img/icons/info.png">
+                </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#projects">
+                    <div class="pixel-button">
+                        <img class="pixel-icon" src="./components/img/icons/projects.png">
+                </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div class="pixel-button">
+                        <img class="pixel-icon" src="./components/img/icons/archives.png">
+                </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div class="pixel-button">
+                        <img class="pixel-icon" src="./components/img/icons/blog.png">
+                </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div class="pixel-button">
+                        <img class="pixel-icon" src="./components/img/icons/contact.png">
+                </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="intro">
+            <div class="skip-button hidden-skip blinking">
+                <a href=""><img class = "skip-img" src ="./components/img/buttons/skip-intro/skip-intro.png"></a>
+            </div>
+
+            <div class="frames">
+                <div class="sidewalk-container">
+                    <div class="sidewalk-bricks"><img src="./components/img/intro/sidewalk-bricks.png"></div>
+                    <div class="sidewalk"><img src="./components/img/intro/sidewalk.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content-container">
+                <div id="bio">
+                    <div class="my-photo">
+                        <div class="photo-container">
+                            <img src="./components/img/photos/my-photo.png">
+                        </div>
+                    </div>
+                
+                    <div class="text">
+                        <div class="title pixelify-sans-title">
+                            About Myself
+                        </div>
+
+                        <div class="detail pixelify-sans-normal">
+                            Hello! My name is Wijdan Kuncoro. You can call me Dan or Wijdan, an Electrical Engineering student from Telkom University. I usually mess around with electronics, embedded systems engineering, retro technologies, especially old mobile devices and telecoms. But sometimes, I'm also messing around with digital art and design when needed. But most of the time, I'm handling the non-technical such as design rather than technical things. You can see the portfolio of the design <span class="hover-me">here!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div id="projects">
+                    <div class="text">
+                        <div class="title pixelify-sans-title">Projects</div>
+                        <div class="detail pixelify-sans-normal">
+                            All of my projects were uploaded on Github. But beforehand, you can check the highlighted projects here too!
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-container">
+                        <my-carousel data-src="./components/script/projects-data.json"></my-carousel>
+                    </div>
+                </div>
+            </div>
+
+            <div id="archives">
+                <div class="text">
+                    <div class="title pixelify-sans-title">Archives</div>
+                </div>
+
+                <div class="detail pixelify-sans-normal">
+                    Here, you can find my design archives to look for it. 
+                </div>
+
+                <div class="showcase">
+
+                </div>
+            </div>
+
+            <div id="blog">
+                <div class="text">
+                    <div class="title pixelify-sans-title">Blogs</div>
+                </div>
+
+                <div class="detail pixelify-sans-normal">
+                    You can read blogs here from Medium
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="text">
+                    <div class="title pixelify-sans-title">Need Further Information?</div>
+                    <div class="detail pixelify-sans-normal">Don't worry! If you look for further information, you can contact me here!</div>
+                </div>
+
+                <div class="social-container">
+                    <ul>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
