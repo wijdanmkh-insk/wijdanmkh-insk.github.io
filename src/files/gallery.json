@@ -1,19 +1,29 @@
 [{
+    "title":"0",
+    "alt":"Cover Praktikum",
+    "src":"src/img/gallery/0.png"
+},{
+    "title":"1",
     "alt":"Gasping",
     "src":"src/img/gallery/1.png"
 },{
+    "title":"2",
     "alt":"I forgot",
     "src":"src/img/gallery/2.png"
 },{
+    "title":"3",
     "alt":"Sort the data",
     "src":"src/img/gallery/3.png"
 },{
+    "title":"4",
     "alt":"Do the warmups before coding",
     "src":"src/img/gallery/4.png"
 },{
+    "title":"5",
     "alt":"Find the food on Vending Machine",
     "src":"src/img/gallery/5.png"
 },{
+    "title":"6",
     "alt":"Lose your way? Don't worry. We've got you!",
     "src":"src/img/gallery/6.png"
 }]

@@ -1,18 +1,18 @@
 [{
     "title": "Hymas",
-    "description": "An trashcan based on IoT device. Collaborated with @tatsuyaryu and @adzinihsan",
+    "description": "A water trashcan based on IoT. Collaborated with @tatsuyaryu and @adzinihsan",
     "image": "src/img/projects/hymas.png",
     "link":"https://github.com/wijdanmkh-insk/hymas",
     "job":["Front End"]
 },{
     "title": "PaperNest",
-    "description": "A stationary website to organize stationary payments",
+    "description": "A stationary website to buy, organize, and manage your stationery needs. Free delivery applies",
     "image": "src/img/projects/papernest.png",
     "link":"https://github.com/wijdanmkh-insk/papernest",
     "job":["UI/UX", "Front End"]
 },{
     "title": "Tokoliku",
-    "description": "Marketplace that targeted towards old and people who holds phone for the first time",
+    "description": "A marketplace website targeted towards people with diverse backgrounds and experiences, focusing on inclusivity and accessibility.",
     "image": "src/img/projects/tokoliku.png",
     "link":"https://github.com/wijdanmkh-insk/tokoliku",
     "job":["UI/UX"]

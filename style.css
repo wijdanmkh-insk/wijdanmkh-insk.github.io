@@ -282,6 +282,10 @@ nav {
   top:0;
 }
 
+.I-am-hidden{
+  display:none;
+}
+
 #projects{
   display: grid;
   padding:4rem;
@@ -294,13 +298,13 @@ nav {
 
 .projects-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
   gap:1rem;
   margin-top:2rem;
 }
 
 .imgproj{
-  width:clamp(250px, 50%, 300px);
+  width:100%;
   height:200px;
   overflow:hidden;
   position:relative;
@@ -312,7 +316,11 @@ nav {
   object-fit:cover;
   object-position: center;
   display: block;
-  background-position:  right center;
+}
+
+.imgproj img:hover{
+  transition: all 0.3s cubic-bezier(.17,.67,.48,.93);
+  transform: scale(2);
 }
 
 .project-card{
@@ -340,7 +348,7 @@ nav {
   gap: 1rem;
   /* kolom 240–1fr; adjust sesuai selera */
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: start; /* biar tiap kartu nempel atas */
+   align-items: stretch;
 }
 
 /* kartu */
@@ -406,6 +414,69 @@ nav {
   top:50%;
   left:50%;
 }
+
+  .gallery-grid{
+    width:100%;
+    height:400px;
+  }
+
+  .gallery-grid img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+  }
+    
+  .div1 {
+      grid-row: span 3 / span 3;
+  }
+
+  .div4 {
+      grid-column-start: 2;
+      grid-row-start: 2;
+  }
+
+  .div5 {
+      grid-column-start: 3;
+      grid-row-start: 2;
+  }
+
+  .div6 {
+      grid-column-start: 2;
+      grid-row-start: 3;
+  }
+
+  .div7 {
+      grid-column-start: 3;
+      grid-row-start: 3;
+  }
+
+  .div8 {
+      grid-column: span 2 / span 2;
+      grid-row-start: 4;
+  }
+
+  .div9 {
+      grid-column-start: 3;
+      grid-row-start: 4;
+  }
+
+  .img-inject{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    background:#eee; /* biar kelihatan slotnya pas loading */
+  }
+        
 
 /* footer */
 footer {
