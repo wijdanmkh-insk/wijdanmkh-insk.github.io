@@ -21,7 +21,7 @@
     </head>
 
     <body>
-        <nav id="nav" class="nav-default">
+        <nav id="nav" class="nav nav-default">
             <div class="nav-left ">
                 <a href="#hero" class="pixelify-sans-title">Dan</a>
             </div>
@@ -30,7 +30,7 @@
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#gallery">Gallery</a>
-                <a href="#blogs">Blogs</a>
+                <!-- <a href="#blogs">Blogs</a> -->
             </div>
 
             <div class="nav-right">
@@ -47,13 +47,13 @@
         </div>
 
         <div id="about">
-            <div class="container">
+            <div class="row-container">
                 <div class="left">
-                    <div class="about-text vt323-regular">
+                    <div class="text vt323-regular">
                         <h2>Hey there!</h2>
                         <p>I'm Wijdan Kuncoro. You can call me Dan for short :D I'm an Electrical Engineering student at Telkom University batch 2023</p>
-                        <p>My main interest leans on <span class="interest">embedded system</span> and <span class="interest">telecommunication tech. I'm also passionated in legacy devices, especially <span class="interest">cellphone technology. Being a <span class="interest">ghost ressurector</span> sounds fun to me, since it's cheaper to find on internet when it's totally broken. No wonder why you can see those things on my site right now :D</p>
-                        <p>My secondary interest leans on graphics design.></p>
+                        <p>My main interest leans on <span class="interest">embedded system</span> and <span class="interest">telecommunication tech</span>. I'm also passionated in legacy devices, especially <span class="interest">cellphone technology</span>. Being a <span class="interest">ghost ressurector</span> sounds fun to me, since it's cheaper to find on internet when it's totally broken. No wonder why you can see those things on my site right now :D</p>
+                        <p>My secondary interest leans on graphics design. You can see those on gallery</p>
                     </div>
                 </div>
                 
@@ -61,23 +61,35 @@
             </div>
         </div>
 
-        <div id="projects">
-            <div class="container">
-                <div class="top">
-                    <p>Projects</p>
+        <div id="projects" class="vt323-regular">
+            <div class="col-container">
+                <div class="left">
+                    <div class="text vt323-regular">
+                        <h2>Projects</h2>
+                        <p>Let's check the projects I made here (scroll to see more!)</p>
+                    </div>
                 </div>
-                <div class="bottom">
-                    
+                <div class="right">
+                    <div class="project-container">
+                        <div id="list" class="projects-grid"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="blogs">
-            <div class="left"></div>
-            <div class="right"></div>
+        <div id="gallery" class="vt323-regular">
+            <div class="col-container">
+                <div class="left">
+                    <div class="text vt323-regular">
+                        <h2>Gallery</h2>
+                        <p>I'm working with graphics and creative stuff too, so feel free to check them all here!</p>
+                    </div>
+                </div>
+                <div class="right"></div>
+            </div>
         </div>
 
-        <div id="gallery">
+        <div id="blogs">
             <div class="left"></div>
             <div class="right"></div>
         </div>
