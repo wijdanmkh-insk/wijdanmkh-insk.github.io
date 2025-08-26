@@ -25,7 +25,7 @@ function readGallery(){
         if (!imgs[idx]) return;
 
         const img = imgs[idx];
-        img.src = item.image;
+        img.src = item.src;
         img.alt = item.alt || `Gallery ${idx+1}`;
         img.loading = 'lazy';
 
