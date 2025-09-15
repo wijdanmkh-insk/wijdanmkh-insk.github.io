@@ -36,8 +36,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Pixelify Sans", sans-serif;
-  color: var(--black);
-  
+  background-color: var(--black);
 }
 
 :root{
@@ -253,7 +252,9 @@ nav {
   object-fit: cover;
 }
 
+
 .left .right{
+  padding:4rem;
   align-items: center;
   justify-content: center;
 }
@@ -275,6 +276,11 @@ nav {
 .underline a{
   text-decoration: none;
   color: inherit;
+}
+
+.right{
+  width:100%;
+  height:100%;
 }
 
 .right img{
@@ -402,7 +408,7 @@ nav {
 .link-container a:active {
   font-size: 0.75em;
   text-decoration: none;
-  color: inherit; /* opsional kalau warna ikut teks parent */
+  color: inherit; 
 }
 
 #gallery{
@@ -428,55 +434,143 @@ nav {
     display: block;
   }
 
-  .parent {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      gap: 8px;
-  }
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
     
-  .div1 {
-      grid-row: span 3 / span 3;
-  }
+.div1 {
+    grid-row: span 2 / span 2;
+}
 
-  .div4 {
-      grid-column-start: 2;
-      grid-row-start: 2;
-  }
+.div2 {
+    grid-column: span 2 / span 2;
+}
 
-  .div5 {
-      grid-column-start: 3;
-      grid-row-start: 2;
-  }
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
 
-  .div6 {
-      grid-column-start: 2;
-      grid-row-start: 3;
-  }
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
 
-  .div7 {
-      grid-column-start: 3;
-      grid-row-start: 3;
-  }
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
 
-  .div8 {
-      grid-column: span 2 / span 2;
-      grid-row-start: 4;
-  }
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
 
-  .div9 {
-      grid-column-start: 3;
-      grid-row-start: 4;
-  }
+.div7 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
 
-  .img-inject{
-    display:block;
+.div8 {
+    grid-row-start: 4;
+}
+
+.div9 {
+  grid-column: span 2;
+    grid-row-start: 4;
+}
+
+.div10 {
+    grid-row-start: 4;
+}
+
+.div11 {
+    grid-row-start: 4;
+}
+
+.div12 {
+    grid-row-start: 4;
+}
+        
+
+.img-inject {
+  display:block;
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+  background:#eee;
+}
+
+
+  #grid-container{
     width:100%;
-    height:100%;
-    object-fit:cover;
-    background:#eee; /* biar kelihatan slotnya pas loading */
+    height: 450px;
+  }
+
+
+  #contact{
+    display:grid;
+    padding:4rem;
+    grid-template-columns: 1fr;
+    top:50%;
+    left:50%;
   }
         
+  #contact-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background 0.2s ease;
+}
+
+.contact-item:hover {
+  background-color: var(--dark-teal);
+}
+
+.contact-item img.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.contact-item i.icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.contact-item .text {
+  font-size: 16px;
+  color: var(--teal);
+}
+
+body.dark-mode .contact-item {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .contact-item:hover {
+  background-color: var(--teal);
+}
 
 /* footer */
 footer {
@@ -488,7 +582,7 @@ footer {
 
 
 
-/*ompatibility mode */
+/*compatibility mode */
 @media (max-width: 768px) {
   .row-container {
     flex-direction: column;
@@ -496,3 +590,4 @@ footer {
     justify-content: center;
   }
 }
+

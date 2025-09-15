@@ -24,10 +24,22 @@
     "src":"src/img/gallery/5.png"
 },{
     "title":"6",
-    "alt":"Lose your way? Don't worry. We've got you!",
+    "alt":"Meet Erlen",
     "src":"src/img/gallery/6.png"
 },{
     "title":"7",
-    "alt":"I love penguins",
-    "src":"src/img/gallery/7.png"
+    "alt":"Linus knows what you need",
+    "src":"src/img/gallery/7.jpeg"
+},{
+    "title":"8",
+    "alt":"My heart's been running out of line",
+    "src":"src/img/gallery/8.png"
+},{
+    "title":"9",
+    "alt":"Meet Linus Torvalds",
+    "src":"src/img/gallery/9.png"
+},{
+    "title":"10",
+    "alt":"Meet Linus Torvalds",
+    "src":"src/img/gallery/10.png"
 }]

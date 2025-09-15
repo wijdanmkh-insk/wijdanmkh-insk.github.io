@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   navbarAnimate();
   readProjects();
+  loadContacts();
 });
 
 //ANIMASI NAVBAR
@@ -44,7 +45,37 @@ function readGallery(){
 
 document.addEventListener('DOMContentLoaded', readGallery);
 
+// //JSON FILE READER FOR SOCIAL MEDIA SHOWCASE
+// function readSocials(){
+//   fetch('src/files/socials.json')
+//     .then(res => res.json())
+//     .then(data => {
+//       const container = document.querySelector('.container');
+//       if (!container) return console.error('.container gak ketemu');
+//       const frag = document.createDocumentFragment();
 
+//       data.forEach(item => {
+//         const a = document.createElement('a');
+//         a.href = item.url;
+//         a.target = '_blank';
+//         a.rel = 'noopener';
+//         a.className = 'social-link';
+
+//         const icon = document.createElement('i');
+//         icon.className = item.icon || 'fas fa-link'; // default icon jika tidak ada
+
+//         const span = document.createElement('span');
+//         span.textContent = item.name || 'Social';
+
+//         a.append(icon, span);
+//         frag.append(a);
+//       });
+
+//       container.textContent = '';
+//       container.append(frag);
+//     })
+//     .catch(err => console.error('Gagal load socials JSON:', err));
+// }
 
 //JSON FILE READER FOR PROJECTS SHOWCASE
 function readProjects(){
@@ -106,4 +137,37 @@ function readProjects(){
       list.append(frag);
     })
     .catch(err => console.error("Gagal load JSON:", err));
+}
+
+//JSON PARSER FOR CONTACTS
+function createContactItem({ name, icon, link }) {
+  const item = document.createElement('div');
+  item.className = 'contact-item';
+  item.onclick = () => window.location.href = link;
+
+  const iconElement = document.createElement('i');
+  iconElement.className = icon + ' icon';
+
+  const text = document.createElement('span');
+  text.className = 'text';
+  text.textContent = name;
+
+  item.append(iconElement, text);
+  return item;
+}
+
+function loadContacts() {
+  fetch('src/files/contact.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('contact-list');
+      
+      container.innerHTML = '';
+      
+      data.forEach(contact => {
+        const item = createContactItem(contact);
+        container.appendChild(item);
+      });
+    })
+    .catch(err => console.error('Gagal load contacts.json:', err));
 }

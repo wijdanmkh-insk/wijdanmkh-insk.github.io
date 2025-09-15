@@ -1,0 +1,33 @@
+[
+    {
+        "name":"Instagram",
+        "link":"https://www.instagram.com/wijdanmkh_insk",
+        "icon":"fab fa-instagram",
+        "bg-color":"#034c71",
+        "msg":"If you want to DM-ing, just go here"
+    },{
+        "name":"LinkedIn",
+        "link":"https://www.linkedin.com/in/wijdanmkh",
+        "icon":"fab fa-linkedin",
+        "bg-color":"#0077b5",
+        "msg":"If you wanted to connect, just go here"
+    },{
+        "name":"GitHub",
+        "link":"https://github.com/wijdanmkh-insk",
+        "icon":"fab fa-github",
+        "bg-color":"#EC9B3B",
+        "msg":"If you want to see my weird projects related to legacy or something weirder than, just go here"
+    },{
+        "name":"Medium",
+        "link":"https://medium.com/wijdanmkh_insk",
+        "icon":"fab fa-medium",
+        "bg-color":"#E8647C",
+        "msg":"If you want to read my articles, just go here"
+    },{
+        "name":"Steam",
+        "link":"https://steamcommunity.com/id/intellisoes/",
+        "icon":"fab fa-steam",
+        "bg-color":"#1DA1F2",
+        "msg":"If you want to play (I'm not good at playing anyway), just go here"
+    }
+]
