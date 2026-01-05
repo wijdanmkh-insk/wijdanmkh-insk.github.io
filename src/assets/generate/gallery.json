@@ -1,45 +1,51 @@
 [{
     "title":"0",
-    "alt":"Cover Praktikum",
-    "src":"src/img/gallery/0.png"
+    "alt":"Linus Torvalds",
+    "src":"/assets/img/gallery/0.webp",
+    "type":"mobile"
 },{
     "title":"1",
     "alt":"Gasping",
-    "src":"src/img/gallery/1.png"
+    "src":"/assets/img/gallery/1.webp",
+    "type":"desktop"
 },{
     "title":"2",
     "alt":"I forgot",
-    "src":"src/img/gallery/2.png"
+    "src":"/assets/img/gallery/2.webp",
+    "type":"desktop"
 },{
     "title":"3",
     "alt":"Sort the data",
-    "src":"src/img/gallery/3.png"
+    "src":"/assets/img/gallery/3.webp",
+    "type":"desktop"
 },{
     "title":"4",
     "alt":"Do the warmups before coding",
-    "src":"src/img/gallery/4.png"
+    "src":"/assets/img/gallery/4.webp",
+    "type":"desktop"
 },{
     "title":"5",
     "alt":"Find the food on Vending Machine",
-    "src":"src/img/gallery/5.png"
+    "src":"/assets/img/gallery/5.webp",
+    "type":"desktop"
 },{
     "title":"6",
     "alt":"Meet Erlen",
-    "src":"src/img/gallery/6.png"
+    "src":"/assets/img/gallery/6.webp",
+    "type":"desktop"
 },{
     "title":"7",
     "alt":"Linus knows what you need",
-    "src":"src/img/gallery/7.jpeg"
+    "src":"/assets/img/gallery/7.jpeg",
+    "type":"printout"
 },{
     "title":"8",
     "alt":"My heart's been running out of line",
-    "src":"src/img/gallery/8.png"
+    "src":"/assets/img/gallery/8.webp",
+    "type":"printout"
 },{
     "title":"9",
-    "alt":"Meet Linus Torvalds",
-    "src":"src/img/gallery/9.png"
-},{
-    "title":"10",
-    "alt":"Meet Linus Torvalds",
-    "src":"src/img/gallery/10.png"
+    "alt":"Cover Praktikum Genap",
+    "src":"/assets/img/gallery/9.webp",
+    "type":"mobile"
 }]

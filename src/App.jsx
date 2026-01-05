@@ -1,12 +1,21 @@
-import { useState } from 'react'
-import Home from './components/page/Home'
-import './App.css'
+
+import Nav from './components/layout/Nav.jsx'
+import Landing from './components/layout/Landing.jsx'
+import About from './components/layout/about.jsx'
+import Projects from './components/layout/Projects.jsx'
+import Gallery from './components/layout/Gallery.jsx'
+import Footer from './components/layout/Footer.jsx'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <Nav/>
+      <Landing/>
+      <About/>
+      <Projects/>
+      {/* <Gallery/> */}
+      {/* <Footer/> */}
     </>
   )
 }
