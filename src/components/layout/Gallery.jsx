@@ -9,7 +9,7 @@ export default function Gallery(){
       <div className="gallery-container">
 
         <div className="gallery-header">
-          <h2>$ gallery</h2>
+          <h2>$ ls /gallery</h2>
         </div>
 
         {/* GRID */}

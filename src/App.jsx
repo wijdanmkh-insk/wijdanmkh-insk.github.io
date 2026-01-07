@@ -14,8 +14,8 @@ function App() {
       <Landing/>
       <About/>
       <Projects/>
-      {/* <Gallery/> */}
-      {/* <Footer/> */}
+      <Gallery/>
+      <Footer/>
     </>
   )
 }

@@ -2,12 +2,12 @@
     "title":"0",
     "alt":"Linus Torvalds",
     "src":"/assets/img/gallery/0.webp",
-    "type":"mobile"
+    "type":"A wallpaper of Linus Torvalds (sorry about that)"
 },{
     "title":"1",
     "alt":"Gasping",
     "src":"/assets/img/gallery/1.webp",
-    "type":"desktop"
+    "type":"A desktop wallpaper for Daskom Laboratory practicians computer "
 },{
     "title":"2",
     "alt":"I forgot",
@@ -32,20 +32,25 @@
     "title":"6",
     "alt":"Meet Erlen",
     "src":"/assets/img/gallery/6.webp",
-    "type":"desktop"
+    "type":"An image of DLOR 2025 theme for Instagram feeds"
 },{
     "title":"7",
-    "alt":"Linus knows what you need",
-    "src":"/assets/img/gallery/7.jpeg",
+    "alt":"My heart's been running out of line",
+    "src":"/assets/img/gallery/7.webp",
     "type":"printout"
 },{
     "title":"8",
-    "alt":"My heart's been running out of line",
+    "alt":"Someone, you know who it is",
     "src":"/assets/img/gallery/8.webp",
     "type":"printout"
 },{
     "title":"9",
     "alt":"Cover Praktikum Genap",
     "src":"/assets/img/gallery/9.webp",
-    "type":"mobile"
+    "type":"A cover module for Daskom Laboratory practicians in even semester"
+},{
+    "title":"10",
+    "alt":"Cover Official Account Line",
+    "src":"/assets/img/gallery/10.webp",
+    "type":"A cover background for Daskom Laboratory official Line account (unused)"
 }]

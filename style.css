@@ -163,7 +163,7 @@
 
   /* Carousel on mobile, Grid on desktop */
   .projects-wrapper{
-    @apply flex md:grid gap-4 md:gap-6 overflow-x-auto md:overflow-x-visible md:grid-cols-2 snap-x snap-mandatory md:snap-none pb-4 md:pb-0;
+    @apply flex md:grid gap-4 md:gap-6 overflow-x-auto md:overflow-x-visible md:grid-cols-3 snap-x snap-mandatory md:snap-none pb-4 md:pb-0;
     scroll-behavior: smooth;
   }
 
@@ -349,12 +349,12 @@
 /* ====================== Footer Styles ====================== */
 
 .footer{
-  @apply w-full border-t border-primary/30 mt-16 py-8 px-4 md:px-8 lg:px-16;
+  @apply w-full py-8 px-4 md:px-8 lg:px-16 overflow-visible relative;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .footer-container{
-  @apply max-w-6xl mx-auto relative flex items-center;
+  @apply max-w-6xl mx-auto relative flex items-center overflow-visible;
 }
 
 /* CENTERED TEXT */
@@ -380,10 +380,18 @@
 
 /* RIGHT IMAGE */
 .footer-image{
-  @apply ml-auto w-10 h-10;
+  @apply ml-auto w-32 md:w-40 lg:w-96 overflow-visible absolute right-4;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.footer-image-visible{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .footer-artwork-img{
-  @apply w-full h-full object-cover border border-primary/30;
+  @apply w-full h-auto object-contain;
 }
 }

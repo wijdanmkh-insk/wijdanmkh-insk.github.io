@@ -18,6 +18,7 @@ export default function About(){
                         </div>
 
                         <div className="social-links">
+                            <p className="text-lg">If you want to connect/contact, just hit these links below. I'll respond as soon as possible.</p>
                             {contactLinks.map((link) => (
                                 <a
                                     key={link.name}
